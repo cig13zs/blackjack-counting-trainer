@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A local Hi-Lo card counting trainer with scored practice.">
+    <title>Counting Desk</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/styles.css">
+    <script type="module" src="/app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#workspace">Skip to the exercise</a>
+
+    <header class="site-header">
+      <div class="brand-mark" aria-hidden="true">
+        <span>+</span><span>0</span><span>−</span>
+      </div>
+      <div>
+        <p class="eyebrow">Hi-Lo practice</p>
+        <p class="brand-name">Counting Desk</p>
+      </div>
+      <p class="local-note">Runs on this device</p>
+    </header>
+
+    <div class="app-shell">
+      <nav class="mode-nav" aria-label="Training modes">
+        <p class="mode-nav-label">Training path</p>
+        <button type="button" data-mode="learn" aria-pressed="true">
+          <span class="nav-number">01</span>
+          <span><strong>Learn</strong><small>The tags and rules</small></span>
+        </button>
+        <button type="button" data-mode="values" aria-pressed="false">
+          <span class="nav-number">02</span>
+          <span><strong>Card values</strong><small>Classify 20 cards</small></span>
+        </button>
+        <button type="button" data-mode="running" aria-pressed="false">
+          <span class="nav-number">03</span>
+          <span><strong>Running count</strong><small>Follow one deck</small></span>
+        </button>
+        <button type="button" data-mode="true" aria-pressed="false">
+          <span class="nav-number">04</span>
+          <span><strong>True count</strong><small>Use cards remaining</small></span>
+        </button>
+        <button type="button" data-mode="shoe" aria-pressed="false">
+          <span class="nav-number">05</span>
+          <span><strong>Shoe practice</strong><small>Count to the last card</small></span>
+        </button>
+      </nav>
+
+      <main id="workspace" class="workspace" tabindex="-1"></main>
+    </div>
+
+    <div id="app-status" class="visually-hidden" aria-live="polite" aria-atomic="true"></div>
+
+    <footer class="site-footer">
+      <p>Your progress stays in this tab and resets when the page reloads.</p>
+      <p>Counting Desk teaches arithmetic practice. It does not predict the next card or guarantee a result.</p>
+    </footer>
+  </body>
+</html>
