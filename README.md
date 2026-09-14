@@ -2,6 +2,8 @@
 
 Counting Desk is a local website for learning the Hi-Lo blackjack counting system. It starts with the three rank tags, then moves through card classification, guided running-count updates, true-count arithmetic, and a complete-shoe memory exercise.
 
+Watch the [video demo](https://www.youtube.com/shorts/e2pefY0z4gU) to see the trainer in use.
+
 The project uses browser ES modules and Node's built-in HTTP server. It has no package dependencies, accounts, analytics, remote fonts, or remote images.
 
 ## Run it
