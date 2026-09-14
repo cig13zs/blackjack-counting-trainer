@@ -435,7 +435,7 @@ function renderShoeMode() {
       ${modeHeading("Exercise 05", "Count a complete shoe", "Every batch appears face up before you answer. The engine deals without replacement and never reshuffles midway.")}
       ${shoeSettingsMarkup()}
       <div class="score-line">
-        <span>Current attempt <strong>${shoe.attempts + 1}</strong></span>
+        <span>Current attempt <strong>${shoe.attempts + (hasFeedback ? 0 : 1)}</strong></span>
         <span>Correct batches <strong>${shoe.score}</strong></span>
       </div>
       <div class="card-row">
